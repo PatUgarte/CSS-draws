@@ -22,7 +22,7 @@ html {
 }
 
 a {
-    color: var(--white);
+    color: var(--skin);
     font-size: 15px;
     position: absolute;
     left: 25px;
