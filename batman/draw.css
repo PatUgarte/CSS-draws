@@ -1,0 +1,50 @@
+:root {
+    --background: #C5C6E6;
+    --cape: #3169A8;
+    --eyes: #FFFFFF;
+    --floor: #908FC9;
+    --suit: #1B3744;
+    --shadow-cape: #2C579E;
+    --shadow-suit: #000000;
+    --skin: #F0BF9B;
+    --lips: #DF676D;
+    --belt: #F6CA41;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body {
+    background-color: var(--background);
+    overflow: hidden;
+}
+
+a {
+    color: var(--suit);
+    font-size: 15px;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+}
+
+img, .draw-container {
+    border: 1px var(--suit) solid;
+    height: 50vh;
+}
+
+img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.draw-container {
+    background-color: var(--background);
+    width: 100%;
+}
