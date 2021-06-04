@@ -50,7 +50,7 @@ img {
 }
 
 p {
-    color: var(--shadow-cape);
+    color: var(--suit);
     font-size: 30px;
     text-transform: uppercase;
     position: absolute;
@@ -69,12 +69,17 @@ p {
     position: absolute;
 }
 
+
+.back-cape{}
+.front-cape{}
+
+
 .batman-body {
     background-color: var(--suit);
     border-top-left-radius: 40% 25%;
     height: 40%;
     left: 50%;
-    top: 50%;
+    top: 45%;
     transform: translate(-50%, -50%);
     width: 30%;
     z-index: 2;
@@ -160,7 +165,7 @@ p {
 
 .batman-arm {
     border-radius: 25%;
-    top: 64%;
+    top: 59%;
     left: 29%;
     transform: translateY(-50%) rotate(-45deg);
     height: 15%;
@@ -172,21 +177,47 @@ p {
     background-color: var(--belt);
     border-radius: 10px;
     left: 50%;
-    top: 75%;
+    top: 70%;
     transform: translate(-50%, -100%);
     height: 8%;
     width: 34%;
     z-index: 3;
 }
 
-.batman-pants {}
+.batman-pants {
+    background-color: var(--suit);
+    border-bottom-left-radius: 12.5% 75%;
+    left: 50%;
+    top: 69%;
+    transform: translateX(-50%);
+    height: 8%;
+    width: 28.5%;
+    z-index: 2;
+}
 
-.batman-leg-left shadow {}
+[class^="batman-leg"] {
+    background-color: var(--suit);
+    top: 70%;
+    height: 15%;
+    width: 7.5%;
+    z-index: 1;
+}
 
-.batman-leg-right {}
+.batman-leg-left {
+    left: 40%;
+}
 
-.back-cape{}
-.front-cape{}
+.batman-leg-right {
+    right: 40%;
+}
+
+.floor {
+    background-color: var(--floor);
+    left: 10%;
+    top: 85%;
+    width: 66%;
+    height: 1%;
+}
 
 .shadow {
     background-color: var(--shadow-suit);
