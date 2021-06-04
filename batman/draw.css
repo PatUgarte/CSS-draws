@@ -69,14 +69,86 @@ p {
     position: absolute;
 }
 
+.front-cape-holder {
+    background-color: var(--shadow-suit);
+    left: 50%;
+    top: 48%;
+    transform: translateX(-50%);
+    height: 2.5%;
+    width: 30%;
+    z-index: 3;
+}
 
-.back-cape{}
-.front-cape{}
+.front-cape {
+    top: 48%;
+    left: 40%;
+    height: 33%;
+    width: 30%;
+    z-index: 4;
+}
+.front-cape .tip {
+    background-color: var(--cape);
+    height: 8%;
+    width: 50%;
+}
+.front-cape .main {
+    background-color: var(--cape);
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 15%;
+    left: 15%;
+    height: 100%;
+    width: 85%;
+}
+.front-cape .cape-mask {
+    background-color: var(--cape);
+    top: 8%;
+    height: 15%;
+    width: 15%;
+}
+.front-cape .cape-mask .filter {
+    background-color: var(--suit);
+    border-top-right-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
 
+.back-cape {
+    z-index: 0;
+    top: 48%;
+    left: 10%;
+    height: 33%;
+    width: 55%;
+}
+.back-cape .top {
+    background-color: var(--shadow-cape);
+    border-bottom-left-radius: 5% 20%;
+    height: 50%;
+    width: 100%;
+}
+.back-cape .bottom {
+    background-color: var(--shadow-cape);
+    border-bottom-left-radius: 10% 40%;
+    top:50%;
+    left: 18%;
+    height: 50%;
+    width: 82%;
+}
+.back-cape .cape-mask {
+    background-color: var(--shadow-cape);
+    top:50%;
+    height: 50%;
+    width: 18%;
+}
+.back-cape .cape-mask .filter {
+    background-color: var(--background);
+    border-top-right-radius: 28%;
+    height: 100%;
+    width: 100%;
+}
 
 .batman-body {
     background-color: var(--suit);
-    border-top-left-radius: 40% 25%;
+    border-top-left-radius: 30%;
     height: 40%;
     left: 50%;
     top: 45%;
@@ -94,12 +166,12 @@ p {
     z-index: 1;
 }
 
-.batman-ear-left{
+.batman-ear-left {
     border-bottom-color: var(--shadow-suit);
-    left: 40%;
+    left: 30%;
 }
 
-.batman-ear-right{
+.batman-ear-right {
     left: 100%;
     transform: translateX(-100%);
 }
@@ -114,7 +186,7 @@ p {
 [class^="batman-eye"] {
     background-color: var(--eyes);
     border-radius: 50%;
-    top: 15%;
+    top: 10%;
     padding-bottom: 100%;
     width: 100%;
 }
@@ -129,7 +201,7 @@ p {
 
 [class^="batman-mask-eye"] {
     background-color: var(--suit);
-    top: 10%;
+    top: 8.5%;
     height: 10%;
     width: 120%;
     z-index: 1;
@@ -157,19 +229,19 @@ p {
 .batman-lips {
     background-color: var(--lips);
     left: 50%;
-    top: 30%;
-    transform: translateX(-50%);
+    top: 40%;
+    transform: translateX(-50%) rotate(-2deg);
     height: 18%;
     width: 85%;
 }
 
 .batman-arm {
     border-radius: 25%;
-    top: 59%;
-    left: 29%;
+    top: 60%;
+    left: 30.25%;
     transform: translateY(-50%) rotate(-45deg);
-    height: 15%;
-    width: 12%;
+    height: 12%;
+    width: 10%;
     z-index: 1;
 }
 
@@ -213,9 +285,9 @@ p {
 
 .floor {
     background-color: var(--floor);
-    left: 10%;
+    left: 15%;
     top: 85%;
-    width: 66%;
+    width: 60%;
     height: 1%;
 }
 
