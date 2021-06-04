@@ -21,48 +21,27 @@ html {
 }
 
 body {
-    background: repeating-linear-gradient(-45deg, var(--belt) 0% 4%, var(--shadow-suit) 4% 8%);
-    display: flex;
+    background-color: var(--background);
+    display: grid;
     overflow: hidden;
-}
-
-.img-container {
-    border-right: 1px var(--shadow-suit) solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    width: 35vw;
     height: 100vh;
+    width: 100%;
 }
 
 a {
-    color: var(--eyes);
+    color: var(--suit);
     font-size: 15px;
     position: absolute;
     left: 25px;
     top: 25px;
 }
 
-img {
-    width: 100%;
-}
-
-p {
-    color: var(--suit);
-    font-size: 30px;
-    text-transform: uppercase;
-    position: absolute;
-    bottom: 25%;
-}
-
 .draw-container {
-    background-color: var(--background);
     margin: auto;
+    padding-top: 72%;
     position: relative;
-    height: 100vh;
-    width: 65vw;
+    top: -18%;
+    width: 85%;
 }
 
 .draw-container * {
