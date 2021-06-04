@@ -21,30 +21,173 @@ html {
 }
 
 body {
-    background-color: var(--background);
+    background: repeating-linear-gradient(-45deg, var(--belt) 0% 4%, var(--shadow-suit) 4% 8%);
+    display: flex;
     overflow: hidden;
 }
 
+.img-container {
+    border-right: 1px var(--shadow-suit) solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 35vw;
+    height: 100vh;
+}
+
 a {
-    color: var(--suit);
+    color: var(--eyes);
     font-size: 15px;
     position: absolute;
     left: 25px;
     top: 25px;
 }
 
-img, .draw-container {
-    border: 1px var(--suit) solid;
-    height: 50vh;
+img {
+    width: 100%;
 }
 
-img {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+p {
+    color: var(--shadow-cape);
+    font-size: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 25%;
 }
 
 .draw-container {
     background-color: var(--background);
+    margin: auto;
+    position: relative;
+    height: 100vh;
+    width: 65vw;
+}
+
+.draw-container * {
+    position: absolute;
+}
+
+.batman-body {
+    background-color: var(--suit);
+    border-top-left-radius: 40% 25%;
+    height: 40%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    z-index: 2;
+}
+
+[class^="batman-ear"] {
+    border-bottom: 5vw var(--suit) solid;
+    border-left: 5vw transparent solid;
+    top: -4.9vw;
+    height: 0;
+    width: 0;
+    z-index: 1;
+}
+
+.batman-ear-left{
+    border-bottom-color: var(--shadow-suit);
+    left: 40%;
+}
+
+.batman-ear-right{
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+[class^="batman-container-eye"] {
+    height: 100%;
+    overflow: hidden;
+    min-width: 20px;
+    width: 15%;
+}
+
+[class^="batman-eye"] {
+    background-color: var(--eyes);
+    border-radius: 50%;
+    top: 15%;
+    padding-bottom: 100%;
     width: 100%;
+}
+
+[class$="-container-eye-left"] {
+    left: 15%;
+}
+
+[class$="-container-eye-right"] {
+    left: 55%;
+}
+
+[class^="batman-mask-eye"] {
+    background-color: var(--suit);
+    top: 10%;
+    height: 10%;
+    width: 120%;
+    z-index: 1;
+}
+
+[class$="mask-eye-left"] {
+    left: 60%;
+    transform: translateX(-50%) rotate(25deg);
+}
+
+[class$="mask-eye-right"] {
+    left: 40%;
+    transform: translateX(-50%) rotate(-25deg);
+}
+
+.batman-mouth {
+    background-color: var(--skin);
+    border-left: 2px var(--lips) solid;
+    border-top-right-radius: 10% 50%;
+    top: 35%;
+    height: 12%;
+    width: 80%;
+}
+
+.batman-lips {
+    background-color: var(--lips);
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    height: 18%;
+    width: 85%;
+}
+
+.batman-arm {
+    border-radius: 25%;
+    top: 64%;
+    left: 29%;
+    transform: translateY(-50%) rotate(-45deg);
+    height: 15%;
+    width: 12%;
+    z-index: 1;
+}
+
+.batman-belt {
+    background-color: var(--belt);
+    border-radius: 10px;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -100%);
+    height: 8%;
+    width: 34%;
+    z-index: 3;
+}
+
+.batman-pants {}
+
+.batman-leg-left shadow {}
+
+.batman-leg-right {}
+
+.back-cape{}
+.front-cape{}
+
+.shadow {
+    background-color: var(--shadow-suit);
 }
